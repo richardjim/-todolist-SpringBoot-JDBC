@@ -33,17 +33,22 @@ build/
 .vscode/
 
 ### Docker ###
-# Ignore Docker files and directories
+# Include Dockerfile and docker-compose.yml
+!/Dockerfile
+!/docker-compose.yml
+
+# Exclude other docker-compose files
 docker-compose.override.yml
 docker-compose.local.yml
 docker-compose.dev.yml
 docker-compose.prod.yml
 docker-compose.test.yml
-.dockerignore
+
+# Include .dockerignore
+!.dockerignore
 
 # Ignore Docker related directories
 /docker-data/
-/docker-entrypoint-initdb.d/
 /docker-entrypoint-initdb.d/
 /var/lib/docker/
 **/.docker
