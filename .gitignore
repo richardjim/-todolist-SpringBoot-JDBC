@@ -31,3 +31,35 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Docker ###
+# Ignore Docker files and directories
+docker-compose.override.yml
+docker-compose.local.yml
+docker-compose.dev.yml
+docker-compose.prod.yml
+docker-compose.test.yml
+.dockerignore
+
+# Ignore Docker related directories
+/docker-data/
+/docker-entrypoint-initdb.d/
+/docker-entrypoint-initdb.d/
+/var/lib/docker/
+**/.docker
+
+# Ignore Docker volumes and temporary files
+docker/volumes/
+docker/.temp/
+
+# Ignore Docker log files
+docker/logs/
+
+# Ignore Docker build directories
+**/docker/build/
+
+# Ignore Docker network configurations
+**/docker/network/
+
+# Ignore Docker service configuration files
+**/docker/services/
