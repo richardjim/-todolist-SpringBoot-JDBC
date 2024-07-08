@@ -31,7 +31,10 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### Environment Variables ###
 .env
+
 ### Docker ###
 # Include Dockerfile and docker-compose.yml
 !/Dockerfile
