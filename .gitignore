@@ -1,3 +1,4 @@
+# General ignores
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
@@ -32,13 +33,12 @@ build/
 ### VS Code ###
 .vscode/
 
-### Environment Variables ###
-.env
-
 ### Docker ###
+.env
 # Include Dockerfile and docker-compose.yml
 !/Dockerfile
 !/docker-compose.yml
+!/init.sql
 
 # Exclude other docker-compose files
 docker-compose.override.yml
